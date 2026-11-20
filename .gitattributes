@@ -1,0 +1,16 @@
+# 强制所有脚本/配置用 LF，防止 Windows Git 转 CRLF 导致
+# Linux runner 上 "#!/bin/bash\r" 报坏解释器、构建失败。
+* text=auto eol=lf
+*.sh    text eol=lf
+*.py    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+init     text eol=lf
+initramfs/init text eol=lf
+APKBUILD text eol=lf
+deviceinfo text eol=lf
+modules-initfs text eol=lf
+*.bin binary
+*.mbn binary
+*.img binary
+*.apk binary
